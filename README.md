@@ -121,3 +121,4 @@ TRITINA/
 | Niharika Mathankar | Team Leader . Project Architecture . ML model |
 | Anuja Tiwaskar |·Backend Development . Integration |
 | Nikhil Tembhare | .Frontend Development. Backend Development |
+
