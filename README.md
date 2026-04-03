@@ -10,7 +10,6 @@
 **Team Name:** TRITINA  
 **Team Leader:** Niharika Mathankar  
 **Team Members:** Anuja Tiwaskar · Nikhil Tembhare
-
 ---
 
 ## What is TRITINA?
