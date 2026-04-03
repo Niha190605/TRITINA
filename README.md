@@ -3,7 +3,7 @@
 
 > *Because vision loss shouldn't depend on your zip code.*
 
----
+
 
 ## Hackathon Project
 
@@ -11,7 +11,6 @@
 **Team Leader:** Niharika Mathankar  
 **Team Members:** Anuja Tiwaskar · Nikhil Tembhare
 
----
 
 ## What is TRITINA?
 
@@ -19,14 +18,14 @@ TRITINA is a full-stack clinical platform that enables doctors to upload fundus 
 
 | Disease | Description |
 |---|---|
-| 🔴 Diabetic Retinopathy | Damage to retinal blood vessels due to diabetes |
-| 🟡 Glaucoma | Optic nerve damage causing vision loss |
-| 🟠 Cataract | Clouding of the eye lens |
-| 🟢 Normal | No disease detected |
+|Diabetic Retinopathy | Damage to retinal blood vessels due to diabetes |
+|Glaucoma | Optic nerve damage causing vision loss |
+|Cataract | Clouding of the eye lens |
+|Normal | No disease detected |
 
 The doctor receives a **GradCAM heatmap** — a visual explanation of exactly where in the retina the AI detected the issue — making the diagnosis explainable and trustworthy.
 
----
+
 
 ## Key Features
 
@@ -38,7 +37,7 @@ The doctor receives a **GradCAM heatmap** — a visual explanation of exactly wh
 - **JWT Authentication** — Secure login for doctors and patients
 - **Report Pipeline** — Doctor → Diagnosis → Prescription → Patient, all in one flow
 
----
+
 
 ## Tech Stack
 
@@ -52,7 +51,7 @@ The doctor receives a **GradCAM heatmap** — a visual explanation of exactly wh
 | Image Storage | Cloudinary |
 | Auth | JWT (python-jose, passlib) |
 
----
+
 
 ## Architecture
 
@@ -81,8 +80,6 @@ Doctor uploads image
 - **Training Data** — Cataract, Glaucoma, Diabetic Retinopathy, Normal retinal image datasets
 - **Input Size** — 224×224 RGB fundus images
 - **Output** — 4-class softmax prediction + GradCAM heatmap
-
----
 
 ## Team
 
