@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema(
 
     // Patient fields
     age:            { type: Number },
-    gender:         { type: String, enum: ["male", "female", "other", ""] },
+    gender:         { type: String, enum: ["Male", "female", "other", ""] },
     phone:          { type: String },
     medicalHistory: { type: String },
 
