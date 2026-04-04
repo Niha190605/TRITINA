@@ -180,7 +180,7 @@ export default function MainPortal({ screen, currentUser, patients, setPatients,
         <header className="dash-header">
           <div className="dash-header-left">
             <div className="status-dot" />
-            <span className="dash-logo-text">RetinaAI Portal</span>
+            <span className="dash-logo-text">TRITINA</span>
             <span className="role-chip patient">Patient</span>
           </div>
           <div className="dash-header-right">
