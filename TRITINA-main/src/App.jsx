@@ -3,13 +3,13 @@ import MainPortal from "./MainPortal";
 import "./App.css";
 
 const DEMO_DOCTOR = {
-  id: "D001", name: "Dr. Elena Vasquez",
-  specialization: "Ophthalmologist", email: "dr.vasquez@clinic.com"
+  id: "D001", name: "Dr.Earth",
+  specialization: "Ophthalmologist", email: "drearth@clinic.com"
 };
 
 const INITIAL_PATIENTS = [
   {
-    id: "P001", name: "Niha", age: 34, email: "niha@email.com",
+    id: "P001", name: "Niha", age: 20, email: "niha@email.com",
     reports: [
       {
         id: "R001", date: "2026-02-15",
