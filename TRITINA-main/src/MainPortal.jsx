@@ -5,7 +5,7 @@ const AI_BANK = [
   { diagnosis: "Diabetic Retinopathy", stage: "Stage 1", confidence: 82, risk: "Moderate", findings: "Early microaneurysms detected. Mild vascular changes in peripheral retina. No significant exudates present." },
   { diagnosis: "Normal Retina",        stage: "N/A",     confidence: 94, risk: "Low",      findings: "Retinal examination within normal limits. Healthy optic nerve. No lesions or abnormalities detected." },
   { diagnosis: "Macular Degeneration", stage: "Dry AMD", confidence: 71, risk: "High",     findings: "Drusen deposits visible near macula. Geographic atrophy suspected. Immediate specialist consultation advised." },
-  { diagnosis: "Glaucoma",             stage: "Suspect", confidence: 78, risk: "High",     findings: "Cup-to-disc ratio elevated. Asymmetry noted. IOP measurement and visual field testing strongly advised." },
+  { diagnosis: "Glaucoma",             stage: "Stage 3", confidence: 78, risk: "High",     findings: "Cup-to-disc ratio elevated. Asymmetry noted. IOP measurement and visual field testing strongly advised." },
   { diagnosis: "Diabetic Retinopathy", stage: "Stage 2", confidence: 85, risk: "Moderate", findings: "Multiple microaneurysms and hard exudates identified. Moderate non-proliferative changes detected." },
 ];
 
