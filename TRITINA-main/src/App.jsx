@@ -191,7 +191,7 @@ export default function App() {
               Sign In as {loginRole === "patient" ? "Patient" : "Doctor"} →
             </button>
             <div className="auth-hint">
-              {loginRole === "patient" ? "Demo: niha@email.com / patient123" : "Demo: dr.vasquez@clinic.com / doctor123"}
+              {loginRole === "patient" ? "Demo: niha@email.com / 12345678" : "Demo: drearth@clinic.com / 12345678"}
             </div>
             <div className="auth-switch">
               Don't have an account?{" "}
@@ -212,7 +212,7 @@ export default function App() {
             <div className="form-row">
               <div className="pass-wrap">
                 <input className="form-input" type={showPass ? "text" : "password"} placeholder="Password * (min 6)" value={regPass} onChange={e => setRegPass(e.target.value)} />
-                <button className="pass-eye" onClick={() => setShowPass(p => !p)}>{showPass ? "🙈" : "👁"}</button>
+                <button className="pass-eye" onClick={() => setShowPass(p => !p)}>{showPass ? "👁"}</button>
               </div>
               <input className="form-input" type={showPass ? "text" : "password"} placeholder="Confirm password *" value={regConfirm} onChange={e => setRegConfirm(e.target.value)} />
             </div>
