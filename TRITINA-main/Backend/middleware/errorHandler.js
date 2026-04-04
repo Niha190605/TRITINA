@@ -16,7 +16,7 @@ const errorHandler = (err, req, res, next) => {
   }
 
   // Bad ObjectId
-  if (err.name === "CastError") {
+  if (err.name === "Cast Error") {
     message = `Invalid ID: ${err.value}`;
     status  = 400;
   }
