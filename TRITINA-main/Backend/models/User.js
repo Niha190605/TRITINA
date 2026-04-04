@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema(
       match: [/^\S+@\S+\.\S+$/, "Invalid email"],
     },
     password: { type: String, required: [true, "Password is required"], minlength: 6, select: false },
-    role: { type: String, enum: ["patient", "doctor"], required: true },
+    role: { type: String, enum: ["Patient", "doctor"], required: true },
     isActive: { type: Boolean, default: true },
 
     // Patient fields
