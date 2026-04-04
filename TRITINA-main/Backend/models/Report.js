@@ -43,7 +43,7 @@ const reportSchema = new mongoose.Schema(
 
 reportSchema.pre(/^find/, function (next) {
   this.populate("patient",    "name email age")
-      .populate("reviewedBy", "name specialization");
+      .populate("reviewed By", "name specialization");
   next();
 });
 
