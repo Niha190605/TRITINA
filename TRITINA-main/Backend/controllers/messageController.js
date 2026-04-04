@@ -6,7 +6,7 @@ exports.sendMessage = async (req, res, next) => {
   try {
     const { toUserId, text, relatedReport } = req.body;
     if (!toUserId || !text?.trim())
-      return res.status(400).json({ success: false, message: "toUserId and text required." });
+      return res.status(400).json({ success: false, message: "UserId and text required." });
 
     const recipient = await User.findById(toUserId);
     if (!recipient) return res.status(404).json({ success: false, message: "Recipient not found." });
