@@ -34,7 +34,7 @@ exports.login = async (req, res, next) => {
     if (!user || !(await user.comparePassword(password)))
       return res.status(401).json({ success: false, message: "Invalid credentials." });
 
-    if (!user.isActive) return res.status(403).json({ success: false, message: "Account deactivated." });
+    if (!user.isActive) return res.status(403).json({ success: false, message: "Account Deactivated." });
 
     user.password = undefined;
     sendToken(user, 200, res);
