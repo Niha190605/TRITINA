@@ -7,7 +7,7 @@ exports.getAllPatients = async (req, res, next) => {
     const patients = await User.find({ role: "patient", isActive: true }).sort({ createdAt: -1 });
 
     const enriched = await Promise.all(patients.map(async (p) => {
-      const reports    = await Report.find({ patient: p._id }).select("risk diagnosis stage confidence createdAt sentByDoctor").sort({ createdAt: -1 }).lean();
+      const reports    = await Report.find({ patient: p._id }).select("risk diagnosis stage confidence created and sent by doctor").sort({ createdAt: -1 }).lean();
       const risks      = reports.map(r => r.risk).filter(Boolean);
       const highestRisk = risks.includes("High") ? "High" : risks.includes("Moderate") ? "Moderate" : risks.length ? "Low" : "None";
 
